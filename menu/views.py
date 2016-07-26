@@ -1,3 +1,5 @@
 from django.shortcuts import render
+from . import models
 
-# Create your views here.
+def cupcake_list(request):
+    return render(request,"menu/list.html",{})
