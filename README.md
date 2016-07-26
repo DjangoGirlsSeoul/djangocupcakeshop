@@ -18,21 +18,21 @@ If you want to get started with Django, there is a great official Django tutoria
 
 ### Brief Description:
 
-Inspired from Django Girls **'Cupcakes and high fives'** expression at end of every email, We will build a cupcake menu website called DjangoCupcake Shop[[Github](https://github.com/DjangoGirlsSeoul/djangocupcakeshop)]. We will also look into how to create a virtual environment and `pip install django` and other packages. What goes inside a model, how to create an ImageField and how to add a model form for allowing users to add data. Finally, we will deploy our site on PythonAnywhere and Azure(if time available) for whole world to see it!
+Inspired from [Django Girls](https://www.djangogirls.org) **'Cupcakes and high fives'** expression at end of every email, We will build a cupcake menu website called DjangoCupcake Shop[[Github](https://github.com/DjangoGirlsSeoul/djangocupcakeshop)]. We will also look into how to create a virtual environment and `pip install django` and other packages. What goes inside a model, how to create an ImageField and how to add a model form for allowing users to add data. Finally, we will deploy our site on PythonAnywhere and Azure(if time available) for whole world to see it!
 
-장고걸스에서는 모든 이메일 끝에 ‘컵케이크와 하이파이브!’(Cupcakes and high fives) 라는 메세지를  붙입니다. 그래서 우리가 만들 사이트는 바로 장고컵케이크샵[Github]입니다. 가상환경과 `pip install django`, 그리고 다른 패키지들을 생성하는 방법을 살펴볼 것입니다. 모델에서는 이미지 입력(ImageField)과 사용자가 데이터를 입력하는 모델 폼을 추가하는 방법을 알아 볼 것입니다. 마지막으로 시간이 허락된다면, 만든 여러분의 사이트를 PythonAnywhere 또는 Azure를 배포해 전 세계 모든 사람들이 볼 수 있도록 해볼 것입니다!
+[장고걸스에서는](https://www.djangogirls.org) 모든 이메일 끝에 ‘컵케이크와 하이파이브!’(Cupcakes and high fives) 라는 메세지를  붙입니다. 그래서 우리가 만들 사이트는 바로 장고컵케이크샵[Github]입니다. 가상환경과 `pip install django`, 그리고 다른 패키지들을 생성하는 방법을 살펴볼 것입니다. 모델에서는 이미지 입력(ImageField)과 사용자가 데이터를 입력하는 모델 폼을 추가하는 방법을 알아 볼 것입니다. 마지막으로 시간이 허락된다면, 만든 여러분의 사이트를 PythonAnywhere 또는 Azure를 배포해 전 세계 모든 사람들이 볼 수 있도록 해볼 것입니다!
 
 
 ### Prerequisites:
 
 While beginners are welcome for this tutorial, we recommend completing installation of Python, Django and code Editor beforehand. This tutorial also assumes that you have already tried either Django Girls Tutorial or any other Django tutorial and know basics of Python. You can follow these links [[English](http://tutorial.djangogirls.org/en/installation/) , [Korean](https://djangogirlsseoul.gitbooks.io/tutorial/content/installation/)] for detailed guideline.
 
-The primary language of instruction will be **English** however the tutorial itself is available in Korean!  Please bring your computer with battery fully charged!
+The primary language of instruction will be **English**,however the tutorial itself is available in Korean!  Please bring your computer with battery fully charged!
 
 ### 준비 사항
 
-이 튜토리얼은 초보자를 환영합니다. 좀더 나은 실습환경을 위해 미리 파이썬, 장고, 코드 에디터를 설치해오세요. 미리 장고걸스튜토리얼, 장고 공식 튜토리얼, 파이썬 기초 등을 학습하시고 오셔도 좋습니다. 다음 링크 [영어, 한국어]에서 도움을 받으실 수 있습니다.
-튜로리얼 진행은 영어로 진행이 될 것이지만
+이 튜토리얼은 초보자를 환영합니다. 좀더 나은 실습환경을 위해 미리 파이썬, 장고, 코드 에디터를 설치해오세요. 미리 장고걸스튜토리얼, 장고 공식 튜토리얼, 파이썬 기초 등을 학습하시고 오셔도 좋습니다. 다음 링크 [[영어](http://tutorial.djangogirls.org/en/installation/), [한국어](https://djangogirlsseoul.gitbooks.io/tutorial/content/installation/)]에서 도움을 받으실 수 있습니다.
+튜로리얼 진행은 **영어로** 진행 합니다.
 
 ### Specific Goals for this tutorial:
 
