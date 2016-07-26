@@ -1,5 +1,7 @@
 # DjangoCupcakeshop 파이콘장고튜토리얼
 
+<img src="https://photos.google.com/share/AF1QipMNupigtPMdg34YHFkeNyOlqXKqETj2S01mCC_PY3w26gTiqfJbNPnY_edlV_83YA/photo/AF1QipPxzGj7GokOXsAOlEDsNjgFiqp75ceG-LcmCZtn?key=R1c4VzdFLUpxcFVsenBPWGd0WlB3cGZoY3diTnZR">
+
 ## Brief Introduction
 If you want to get started with Django, there is a great official Django tutorial you can try. Unfortunately, it is written for people having some prior web programming experience. But there is an easy version of it written for beginners with all the installation steps included. If you guessed it right, it is Django Girls Tutorial. You might have tried it at home, but not sure how to start your own project. This tutorial will walk you through all the steps in creating a Cupcake shop menu site (DjangoCupcake Shop). By the end, you'll be confident enough to make your website! Cupcakes and high fives!
 
