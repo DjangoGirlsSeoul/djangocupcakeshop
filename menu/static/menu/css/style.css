@@ -36,9 +36,10 @@ body {
 }
 
 .footer {
-  /*position: absolute;*/
+  position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: 150px;
   text-align: center;
   /* Set the fixed height of the footer here */
   height: 60px;
