@@ -36,7 +36,6 @@ The primary language of instruction will be **English**,however the tutorial its
 튜로리얼 진행은 **영어로** 진행 합니다.
 
 ### Specific Goals for this tutorial 튜토리얼의 목적: 
-
 - The learners should be able to use virtual environment correctly before starting any Django project.
 - The learners should be able to use ImageField in model.
 - The leaners should be able understand role of admin in Django.
@@ -54,7 +53,7 @@ The primary language of instruction will be **English**,however the tutorial its
 - Git/Github의 기본 명령어로 프로젝트를 Github에 배포할 수 있습니다.
 - PythonAnywhere 서버에서 `DEBUG=False mode`와 함께 사이트를 배포할 수 있습니다.
 - 장고 사이트를 위한 간단한 테스트를 작성할 수 있습니다.
-- 
+
 ### Detailed Steps 따라하기
 
 Follow this [link](https://www.gitbook.com/book/djangogirlsseoul/-djangocupcakeshop/details) along tutor for step by step guide.
