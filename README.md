@@ -1,4 +1,5 @@
-# Make DjangoCupcakeshop Website 장고컵케이크가게 웹사이트 만들기
+# Make DjangoCupcakeshop Website
+# 장고컵케이크가게 웹사이트 만들기
 
 <img src="http://66.media.tumblr.com/3d6a31f762235a08c4a72ddb96f27541/tumblr_inline_ns1to5OQuZ1rlmf6c_500.jpg">
 ####### cc. [Django Girls Blog](http://blog.djangogirls.org/post/125007638798/europython2015)
@@ -46,6 +47,7 @@ The primary language of instruction will be **English**,however the tutorial its
 - The learners should be able to use Git/Github basic commands for adding their project on github
 - The learners should be able to deploy their site on PythonAnywhere server with DEBUG=False mode.
 - The learners should be able to write simple test for their Django site.
+
 
 - 장고프로젝트를 시작하기 전에 가상환경을 올바른 방법으로 다룰 수 있습니다.
 - 모델에 이미지필드를 생성할 수 있습니다.
