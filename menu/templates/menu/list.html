@@ -15,59 +15,29 @@
   </div> <!-- /container -->
 
   <div class="container">
+    {% if cakes %}
     <h2 class="text-center">Choose your favorite Cupcake!</h2>
     <div class="row">
+      {% for cake in cakes %}
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
         <div class="card">
         <div class="card-img-top">
-          <div class="image" style="background-image: url({% static 'menu/images/chocolate_cupcake.jpg' %});"></div>
+          <div class="image" style="background-image: url({{ cake.image.url }});"></div>
         </div>
         <div class="card-block">
-          <h4 class="card-title text-center">Chocolate Cupcake</h4>
-            <p class="card-text text-center">
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-              <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            </p>
-          <a href="#" class="btn btn-default btn-lg btn-block">View</a>
-        </div>
-        </div>
-      </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="card">
-          <div class="card-img-top">
-          <div class="image" style="background-image: url({% static 'menu/images/vanilla_cupcake.jpeg' %});"></div>
-          </div>
-        <div class="card-block">
-          <h4 class="card-title text-center">Vanilla Cupcake</h4>
+
+          <h4 class="card-title text-center">{{ cake.name }}</h4>
           <p class="card-text text-center">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
           </p>
           <a href="#" class="btn btn-default btn-lg btn-block">View</a>
         </div>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="card">
-          <div class="card-img-top">
-          <div class="image" style="background-image: url({% static 'menu/images/blueberry_cupcake.png' %});"></div>
-          </div>
-        <div class="card-block">
-          <h4 class="card-title text-center">Blueberry Cookie Cupcake</h4>
-          <p class="card-text text-center">
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-          </p>
-          <a href="#" class="btn btn-default btn-lg btn-block">View</a>
-        </div>
-        </div>
-      </div>
+      {% endfor %}
     </div>
+    {% else %}
+    <h2 class="text-center">No Cupcakes added yet -:(</h2>
+    {% endif %}
   </div>
 {% endblock %}
