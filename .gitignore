@@ -4,4 +4,9 @@ myvenv
 db.sqlite3
 /static
 .DS_Store
+<<<<<<< 9cd183852959cb1e9e43bf57b85e43091cacc13f
 media/
+||||||| merged common ancestors
+=======
+media
+>>>>>>> Step-9 Add required media settings
