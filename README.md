@@ -1,5 +1,4 @@
-# Make DjangoCupcakeshop Website
-# 장고컵케이크가게 웹사이트 만들기
+# Make DjangoCupcakeshop Website 장고컵케이크가게 웹사이트 만들기
 
 <img src="http://66.media.tumblr.com/3d6a31f762235a08c4a72ddb96f27541/tumblr_inline_ns1to5OQuZ1rlmf6c_500.jpg">
 ####### cc. [Django Girls Blog](http://blog.djangogirls.org/post/125007638798/europython2015)
@@ -38,7 +37,7 @@ The primary language of instruction will be **English**,however the tutorial its
 장고에 입문하시는 여러분들을 환영합니다. 좀더 나은 실습환경을 위해 미리 파이썬, 장고, 코드 에디터를 설치하고 오세요. 다음 링크 [[영어](http://tutorial.djangogirls.org/en/installation/), [한국어](https://djangogirlsseoul.gitbooks.io/tutorial/content/installation/)]을 참고하세요. 어느정도 하루정도 장고걸스튜토리얼를 해보신 분들을 진행되니 사전에 장고 공식 튜토리얼, 파이썬 기초 등을 학습하시고 오셔도 좋습니다. 
 튜로리얼 진행은 **영어로** 진행 합니다.
 
-### Specific Goals for this tutorial 튜토리얼의 목적: 
+### Specific Goals for this tutorial 
 - The learners should be able to use virtual environment correctly before starting any Django project.
 - The learners should be able to use ImageField in model.
 - The leaners should be able understand role of admin in Django.
@@ -48,7 +47,7 @@ The primary language of instruction will be **English**,however the tutorial its
 - The learners should be able to deploy their site on PythonAnywhere server with DEBUG=False mode.
 - The learners should be able to write simple test for their Django site.
 
-
+### 튜토리얼의 목적
 - 장고프로젝트를 시작하기 전에 가상환경을 올바른 방법으로 다룰 수 있습니다.
 - 모델에 이미지필드를 생성할 수 있습니다.
 - 장고 관리자의 역할과 기능에 대해 이해할 수 있습니다.
@@ -58,10 +57,11 @@ The primary language of instruction will be **English**,however the tutorial its
 - PythonAnywhere 서버에서 `DEBUG=False mode`와 함께 사이트를 배포할 수 있습니다.
 - 장고 사이트를 위한 간단한 테스트를 작성할 수 있습니다.
 
-### Detailed Steps 따라하기
+### Detailed Steps 
 
 Follow this [link](https://www.gitbook.com/book/djangogirlsseoul/-djangocupcakeshop/details) along tutor for step by step guide.
 
+### 따라하기
 그럼 다음 [링크](https://www.gitbook.com/book/djangogirlsseoul/-djangocupcakeshop/details)에서 차근차근 하나씩 따라가 봅시다.
 
 ### Contributors
