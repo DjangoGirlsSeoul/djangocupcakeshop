@@ -2,8 +2,7 @@
 
 
 body {
-  font-family: Roboto Slab;
-  /*min-height: 2000px;*/
+  font-family: "Roboto Slab","Helvetica", "Arial", sans-serif;;
   padding-top: 70px;
 }
 
@@ -22,7 +21,6 @@ body {
 
 .card-title {
   margin-bottom: 1rem;
-  font-family: Raleway;
   font-weight: 900;
 }
 
@@ -51,4 +49,18 @@ body {
 }
 .text-muted {
   margin-top: 20px;
+}
+
+.glyphicon
+{
+  color:#FF5252;
+}
+
+/* navbar */
+.navbar-default {
+    border-color: #FF5252;
+}
+
+a {
+  color: #FF5252;
 }
