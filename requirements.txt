@@ -1,2 +1,2 @@
-django
-pillow
+Django==1.9.8
+Pillow==3.0.0
