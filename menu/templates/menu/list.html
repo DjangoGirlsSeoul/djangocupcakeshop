@@ -1,5 +1,6 @@
 {% extends 'menu/base.html' %}
 {% load staticfiles %}
+{% load menu_extras %}
 {% block content %}
   <div class="container">
     <!-- Main component for a primary marketing message or call to action -->
@@ -28,7 +29,9 @@
 
           <h4 class="card-title text-center">{{ cake.name }}</h4>
           <p class="card-text text-center">
+            {% for i in cake.rating|get_range %}
             <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            {% endfor %}
           </p>
           <a href="#" class="btn btn-default btn-lg btn-block">View</a>
         </div>
