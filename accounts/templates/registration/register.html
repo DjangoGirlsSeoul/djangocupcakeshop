@@ -1,0 +1,51 @@
+{% extends 'menu/base.html' %}
+{% load staticfiles %}
+{% block content %}
+  <div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron title text-center" style="height: 150px;">
+      <h3 style="color:black;">Cupcake and High Fives!</h3>
+    </div>
+
+  </div> <!-- /container -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-offset-3 col-lg-offset-3 col-md-6 col-lg-6">
+        {% if form.errors %}
+          <p style="color:red;">Try again.</p>
+        {% endif %}
+        <form class="form-horizontal" method="post" action="{% url 'accounts:register' %}">
+          {% csrf_token %}
+        <div class="form-group">
+          <label for="{{ form.username.id_for_label }}" class="col-sm-4 col-md-4 col-lg-4 control-label">Username</label>
+          <div class="col-sm-10 col-md-5 col-lg-5">
+            <input type="text" class="form-control" id="{{ form.username.id_for_label }}" name="{{ form.username.html_name }}" placeholder="username">
+              {{ form.username.errors }}
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="{{ form.password1.id_for_label }}" class="col-sm-4 col-md-4 col-lg-4 control-label">Password</label>
+          <div class="col-sm-10 col-md-5 col-lg-5">
+            <input type="password" class="form-control" id="{{ form.password1.id_for_label }}" name="{{ form.password1.html_name }}" placeholder="Password">
+              {{ form.password1.errors }}
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="{{ form.password2.id_for_label }}" class="col-sm-2 col-md-4 col-lg-4 control-label">Confirm Password</label>
+          <div class="col-sm-10 col-md-5 col-lg-5">
+            <input type="password" class="form-control" id="{{ form.password2.id_for_label }}" name="{{ form.password2.html_name }}" placeholder="Password">
+              {{ form.password2.errors }}
+          </div>
+        </div>
+        <input type="hidden" name="next" value="{{ next }}" />
+        <div class="form-group">
+          <div class="col-md-offset-4 col-lg-offset-4 col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default">Register</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+{% endblock %}

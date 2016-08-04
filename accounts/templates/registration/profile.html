@@ -1,0 +1,31 @@
+{% extends 'menu/base.html' %}
+{% load staticfiles %}
+{% block content %}
+  <div class="container">
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron title text-center" style="height: 150px;">
+      <h3 style="color:black;">Hello {{ request.user.username }}!</h3>
+    </div>
+
+  </div> <!-- /container -->
+
+  <div class="container">
+    {% if cakes %}
+    <h2 class="text-center">My Cupcakes!</h2>
+    <div class="row">
+      {% for cake in cakes %}
+      <div class="col-sm-6 col-md-4">
+        <div class="thumbnail" style="height:336px;">
+          <a href="{% url 'cupcake_detail' pk=cake.pk %}"><img class="img-responsive" src="{{ cake.image.url }}" alt="{{ cake.name }}"></a>
+          <div class="caption">
+            <h3>{{ cake.name }}</h3>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
+    <h2 class="text-center">No Cupcakes added yet -:(</h2>
+    {% endif %}
+  </div>
+{% endblock %}
