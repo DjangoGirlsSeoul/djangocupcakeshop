@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from menu.models import Cupcake
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate,logout
 
 
 @login_required
@@ -34,3 +34,7 @@ def register(request):
     else:
         form = UserCreationForm()
     return render(request, 'registration/register.html', { 'form': form })
+
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect('/')
