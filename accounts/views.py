@@ -3,7 +3,7 @@ from django.contrib.auth.decorators import login_required
 from menu.models import Cupcake
 from django.http import HttpResponseRedirect
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth import authenticate,logout
+from django.contrib.auth import authenticate,logout,login
 
 
 @login_required
@@ -25,11 +25,7 @@ def register(request):
             password = request.POST['password1']
             user = authenticate(username=username, password=password)
             if user is not None:
-                my_cakes = Cupcake.objects.filter(writer=user)
-                context = {'cakes':my_cakes}
-                request.user = user
-                return render(request,"registration/profile.html",context)
-            else:
+                login(request,user)
                 return HttpResponseRedirect('/accounts/profile')
     else:
         form = UserCreationForm()
