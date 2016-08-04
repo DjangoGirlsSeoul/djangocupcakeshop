@@ -1,5 +1,7 @@
 # Make DjangoCupcakeshop Website 장고컵케이크가게 웹사이트 만들기
-[![Build Status](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop.svg?branch=master)](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop)
+[![Build Status](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop.svg?branch=advance)](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop)
+[![Coverage Status](https://coveralls.io/repos/github/DjangoGirlsSeoul/djangocupcakeshop/badge.svg?branch=advance)](https://coveralls.io/github/DjangoGirlsSeoul/djangocupcakeshop?branch=advance)
+
 
 <img src="http://66.media.tumblr.com/3d6a31f762235a08c4a72ddb96f27541/tumblr_inline_ns1to5OQuZ1rlmf6c_500.jpg">
 ####### cc. [Django Girls Blog](http://blog.djangogirls.org/post/125007638798/europython2015)
