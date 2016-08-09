@@ -11,10 +11,10 @@
     </div>
   </div> <!-- /container -->
 </div>
+{% if cakes %}
   <div class="main main-raised">
     <div class="profile-content">
       <div class="container">
-        {% if cakes %}
         <div class="row">
           {% for cake in cakes %}
           <div class="col-sm-6 col-md-4">
@@ -27,10 +27,10 @@
           </div>
           {% endfor %}
         </div>
-        {% else %}
-        <h2 class="text-center">No Cupcakes added yet -:(</h2>
-        {% endif %}
       </div>
     </div>
 </div>
+{% else %}
+<h2 class="text-center">No Cupcakes added yet -:(</h2>
+{% endif %}
 {% endblock %}

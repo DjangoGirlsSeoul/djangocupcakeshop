@@ -402,5 +402,6 @@
 }
 
 .card {
-  height: 385px !important;
+  height: 390px !important;
+  margin-bottom: 5px;
 }
