@@ -2,19 +2,20 @@
 {% load staticfiles %}
 {% load menu_extras %}
 {% block content %}
+<div class="header header-filter" style="background-image: url({% static 'menu/images/cupcake_cover.jpg' %});height:500px">
   <div class="container">
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron title text-center" style="background-image: url({% static 'menu/images/cupcake_cover.jpg' %});">
+    <div class="row">
+      <div class="col-md-12 col-xs-12 text-center">
       <h1 class="title">Cupcakes and High Fives!</h1>
-      <p>Django Girls Seoul welcomes you!</p>
-      <p>Lets build an awesome Django site together</p>
-      <p>
-        <a class="btn btn-lg btn-primary" href="https://github.com/DjangoGirlsSeoul/djangocupcakeshop" role="button">Source Code &raquo;</a>
-      </p>
+                <h4>Django Girls Seoul welcomes you! Lets build an awesome Django site together </h4>
+                <br />
+                <a href="https://github.com/DjangoGirlsSeoul/djangocupcakeshop" class="btn btn-danger btn-raised btn-lg">
+        <i class="fa fa-play"></i> Source code
+      </a>
+      </div>
     </div>
-
   </div> <!-- /container -->
-
+</div>
   <div class="container">
     {% if cakes %}
     <h2 class="text-center">Choose your favorite Cupcake!</h2>
@@ -22,10 +23,8 @@
       {% for cake in cakes %}
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
         <div class="card">
-        <div class="card-img-top">
-          <div class="image" style="background-image: url({{ cake.image.url }});"></div>
-        </div>
-        <div class="card-block">
+          <img  class="card-image" style="object-fit: cover;" src="{{ cake.image.url }}" width="360">
+        <div class="content">
           <h4 class="card-title text-center">{{ cake.name }}</h4>
           <p class="card-text text-center">
             {% for i in cake.rating|get_range %}

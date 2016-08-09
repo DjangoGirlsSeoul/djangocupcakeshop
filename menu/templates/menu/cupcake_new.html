@@ -1,44 +1,48 @@
 {% extends 'menu/base.html' %}
 {% load staticfiles %}
 {% block content %}
-  <div class="container">
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron title text-center" style="height: 200px;">
-      <h1 style="color:black;">Add new Cupcake!</h1>
-    </div>
-
-  </div> <!-- /container -->
-
+<div class="header header-filter" style="background-image: url({% static 'menu/images/cupcake_cover.jpg' %});height:800px;">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-offset-2 col-lg-offset-3 col-md-4 col-lg-4">
-        <h2 class="text-center">Fill in details and submit</h2>
-      <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}
-          {{ form.non_field_errors }}
-          <div class="form-group">
-          <label for="{{ form.name.id_for_label }}">Name</label>
-          <input type="text" class="form-control" id="{{ form.name.id_for_label }}" name="{{ form.name.html_name }}" placeholder="blueberry Cupcake etc.">
-          {{ form.name.errors }}
-        </div>
-        <div class="form-group">
-          <label for="{{ form.rating.id_for_label }}">Rating</label>
-          <input type="text" class="form-control" id="{ form.rating.id_for_label }}" name="{{ form.rating.html_name }}" placeholder="1-5">
-          {{ form.rating.errors }}
-        </div>
-        <div class="form-group">
-          <label for="{{ form.price.id_for_label }}">Price</label>
-          <input type="text" class="form-control" id="{{ form.price.id_for_label }}" name="{{ form.price.html_name }}" placeholder="$ 2.00">
-          {{ form.price.errors }}
-        </div>
-        <div class="form-group">
-          <label for="{{ form.image.id_for_label }}">Image</label>
-          <input type="file" id="{{ form.image.id_for_label }}" name="{{ form.image.html_name }}">
-          <p class="help-block">Attach an image of size of atleast 360w x 250h</p>
-          {{ form.image.errors }}
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
+      <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+        <div class="card card-signup" style="height:450px !important;">
+        <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}
+            {{ form.non_field_errors }}
+            <h3 class="text-center">Add new cupcake</h3>
+            <div class="content">
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="material-icons">cake</i>
+                </span>
+                <input type="text" id="{{ form.name.id_for_label }}" name="{{ form.name.html_name }}"  class="form-control" placeholder="Name">
+                {{ form.name.errors }}
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="material-icons">star</i>
+                </span>
+                <input type="text" id="{{ form.rating.id_for_label }}" name="{{ form.rating.html_name }}"  class="form-control" placeholder="Rating">
+                {{ form.rating.errors }}
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon">
+                  <i class="material-icons">attach_money</i>
+                </span>
+                <input type="text" id="{{ form.price.id_for_label }}" name="{{ form.price.html_name }}"  class="form-control" placeholder="Price">
+                {{ form.price.errors }}
+              </div>
+            <div class="input-group">
+              <label for="{{ form.image.id_for_label }}">Image</label>
+              <input type="file" id="{{ form.image.id_for_label }}" name="{{ form.image.html_name }}">
+              <p class="help-block">Attach an image of size of atleast 360w x 250h</p>
+              {{ form.image.errors }}
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
     </div>
     </div>
   </div>
+</div>
 {% endblock %}

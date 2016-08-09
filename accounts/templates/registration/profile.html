@@ -5,13 +5,14 @@
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron title text-center" style="height: 150px;">
       <h3 style="color:black;">Hello {{ request.user.username }}!</h3>
+      <h4 class="text-center">My Cupcakes!</h4>
+
     </div>
 
   </div> <!-- /container -->
 
   <div class="container">
     {% if cakes %}
-    <h2 class="text-center">My Cupcakes!</h2>
     <div class="row">
       {% for cake in cakes %}
       <div class="col-sm-6 col-md-4">

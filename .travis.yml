@@ -4,6 +4,8 @@ python:
 branches:
   only:
     - 'advance'
+    - 'rest-api'
+    - 'design'
 install:
   - pip install -r requirements.txt
   - pip install coveralls
