@@ -1,32 +1,36 @@
 {% extends 'menu/base.html' %}
 {% load staticfiles %}
 {% block content %}
+<div class="header header-filter" style="background-image: url({% static 'menu/images/cupcake_cover.jpg' %}); height:500px;">
   <div class="container">
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron title text-center" style="height: 150px;">
-      <h3 style="color:black;">Hello {{ request.user.username }}!</h3>
-      <h4 class="text-center">My Cupcakes!</h4>
-
-    </div>
-
-  </div> <!-- /container -->
-
-  <div class="container">
-    {% if cakes %}
     <div class="row">
-      {% for cake in cakes %}
-      <div class="col-sm-6 col-md-4">
-        <div class="thumbnail" style="height:336px;">
-          <a href="{% url 'cupcake_detail' pk=cake.pk %}"><img class="img-responsive" src="{{ cake.image.url }}" alt="{{ cake.name }}"></a>
-          <div class="caption">
-            <h3>{{ cake.name }}</h3>
-          </div>
-        </div>
+      <div class="col-md-12 col-xs-12 text-center">
+        <h2 class="title">Hello {{ request.user.username }}!</h1>
+        <h3>My Cupcakes!</h3>
       </div>
-      {% endfor %}
     </div>
-    {% else %}
-    <h2 class="text-center">No Cupcakes added yet -:(</h2>
-    {% endif %}
-  </div>
+  </div> <!-- /container -->
+</div>
+  <div class="main main-raised">
+    <div class="profile-content">
+      <div class="container">
+        {% if cakes %}
+        <div class="row">
+          {% for cake in cakes %}
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail" style="height:336px;">
+              <a href="{% url 'cupcake_detail' pk=cake.pk %}"><img class="img-responsive" src="{{ cake.image.url }}" alt="{{ cake.name }}"></a>
+              <div class="caption">
+                <h3>{{ cake.name }}</h3>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        {% else %}
+        <h2 class="text-center">No Cupcakes added yet -:(</h2>
+        {% endif %}
+      </div>
+    </div>
+</div>
 {% endblock %}

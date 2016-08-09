@@ -2,7 +2,7 @@
 {% load staticfiles %}
 {% load menu_extras %}
 {% block content %}
-<div class="header header-filter" style="background-image: url({% static 'menu/images/cupcake_cover.jpg' %});height:500px">
+<div class="header header-filter" style="background-image: url({% static 'menu/images/cupcake_cover.jpg' %});">
   <div class="container">
     <div class="row">
       <div class="col-md-12 col-xs-12 text-center">
@@ -16,6 +16,8 @@
     </div>
   </div> <!-- /container -->
 </div>
+<div class="main main-raised">
+  <div class="profile-content">
   <div class="container">
     {% if cakes %}
     <h2 class="text-center">Choose your favorite Cupcake!</h2>
@@ -41,4 +43,6 @@
     <h2 class="text-center">No Cupcakes added yet -:(</h2>
     {% endif %}
   </div>
+</div>
+</div>
 {% endblock %}
