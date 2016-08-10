@@ -405,3 +405,97 @@
   height: 390px !important;
   margin-bottom: 5px;
 }
+#list-img{
+
+  width: 360px;
+}
+
+#detail-img {
+
+  width: 555px;
+}
+
+@media (min-device-width: 768px ) and
+(max-device-width: 1024px){
+  #list-img{
+
+    width: 700px;
+  }
+  #detail-img{
+
+    width: 740px;
+  }
+
+}
+    /* ----------- iPhone 5 and 5S ----------- */
+
+    /* Portrait and Landscape */
+    @media only screen
+      and (min-device-width: 320px)
+      and (max-device-width: 568px)
+      and (-webkit-min-device-pixel-ratio: 2) {
+        #list-img{
+
+          width: 270px;
+        }
+
+        #detail-img {
+
+          width: 290px;
+        }
+    }
+
+    /* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #list-img{
+
+      width: 320px;
+    }
+    #detail-img {
+
+      width: 345px;
+    }
+
+}
+
+    /* ----------- iPhone 6+ ----------- */
+
+    /* Portrait and Landscape */
+@media only screen
+    and (min-device-width: 414px)
+    and (max-device-width: 736px)
+    and (-webkit-min-device-pixel-ratio: 3) {
+
+      #list-img{
+
+        width: 360px;
+      }
+
+      #detail-img {
+
+        width: 385px;
+      }
+    }
+
+    /* ----------- Galaxy S5 ----------- */
+
+    /* Portrait and Landscape */
+    @media screen
+      and (device-width: 360px)
+      and (device-height: 640px)
+      and (-webkit-device-pixel-ratio: 3) {
+        #list-img{
+
+          width: 310px;
+        }
+        #detail-img {
+
+          width: 330px;
+        }
+
+    }

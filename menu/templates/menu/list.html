@@ -10,7 +10,7 @@
                 <h4>Django Girls Seoul welcomes you! Lets build an awesome Django site together </h4>
                 <br />
                 <a href="https://github.com/DjangoGirlsSeoul/djangocupcakeshop" class="btn btn-danger btn-raised btn-lg">
-        <i class="fa fa-play"></i> Source code
+        <i class="fa fa-code"></i> Source code
       </a>
       </div>
     </div>
@@ -25,7 +25,7 @@
       {% for cake in cakes %}
       <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
         <div class="card">
-          <img  class="card-image" style="object-fit: cover;" src="{{ cake.image.url }}" width="360">
+          <img id="list-img" class="card-image" style="object-fit: cover;" src="{{ cake.image.url }}">
         <div class="content">
           <h4 class="card-title text-center">{{ cake.name }}</h4>
           <p class="card-text text-center">
