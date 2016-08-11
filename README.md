@@ -2,8 +2,8 @@
 [![Build Status](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop.svg?branch=master)](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop)
 [![Coverage Status](https://coveralls.io/repos/github/DjangoGirlsSeoul/djangocupcakeshop/badge.svg?branch=master)](https://coveralls.io/github/DjangoGirlsSeoul/djangocupcakeshop?branch=master)
 
-<img src="http://66.media.tumblr.com/3d6a31f762235a08c4a72ddb96f27541/tumblr_inline_ns1to5OQuZ1rlmf6c_500.jpg">
-####### cc. [Django Girls Blog](http://blog.djangogirls.org/post/125007638798/europython2015)
+<img src="https://djangogirlsseoul.gitbooks.io/-djangocupcakeshop/content/cupcake.png" height="460">
+####### cc. [Designed by Freepik](http://www.freepik.com)
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 > 이 튜토리얼은 Creative Commons Attribution-ShareAlike 4.0 International 저작권을 따르고 있습니다. 라이센스 전문은 https://creativecommons.org/licenses/by-sa/4.0/ 에서 확인하세요.
@@ -68,7 +68,7 @@ The primary language will be **English**, however the tutorial itself is availab
 Follow along with this [link](https://www.gitbook.com/book/djangogirlsseoul/-djangocupcakeshop/details) for step by step guide.
 
 ### 따라하기
-그럼 다음 [링크](https://www.gitbook.com/book/djangogirlsseoul/-djangocupcakeshop/details)에서 차근차근 하나씩 따라가 봅시다.
+그럼 다음 [링크](https://www.gitbook.com/book/djangogirlsseoul/djangocupcakeshop_ko/details)에서 차근차근 하나씩 따라가 봅시다.
 
 ### Contributors
 Django Girls Seoul Team (Hassan Abid, Jin Park, Soeun Lee, Sujin Lee)
