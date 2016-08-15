@@ -22,11 +22,11 @@ class MenuTestCase(TestCase):
         self.assertEqual(cupcake1.price, '20')
 
 # uncomment this code in Step 9
-class MenuTestiView(TestCase):
-    def test_index_view_with_no_cupcake(self):
-        """
-        If no cupcakes exist, an appropriate message should be displayed
-        """
-        response = self.client.get(reverse('menu:cupcake_list'))
-        self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "No Cupcakes added yet")
+# class MenuTestiView(TestCase):
+#     def test_index_view_with_no_cupcake(self):
+#         """
+#         If no cupcakes exist, an appropriate message should be displayed
+#         """
+#         response = self.client.get(reverse('menu:cupcake_list'))
+#         self.assertEqual(response.status_code, 200)
+#         self.assertContains(response, "No Cupcakes added yet")
