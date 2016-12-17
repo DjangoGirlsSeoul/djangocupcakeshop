@@ -103,11 +103,11 @@ else :
     DATABASES = {
         'default': {
             'ENGINE': 'sql_server.pyodbc',
-            'NAME': 'os.getenv("DATABASE_NAME")',
-            'USER': 'os.getenv("DATABASE_USER")',
-            'PASSWORD': 'os.getenv("DATABASE_PASSWORD")',
-            'HOST': 'os.getenv("DATABASE_HOST")',
-            'PORT': 'os.getenv("DATABASE_PORT")',
+            'NAME': os.getenv("DATABASE_NAME"),
+            'USER': os.getenv("DATABASE_USER"),
+            'PASSWORD': os.getenv("DATABASE_PASSWORD"),
+            'HOST': os.getenv("DATABASE_HOST"),
+            'PORT': os.getenv("DATABASE_PORT"),
             'OPTIONS' : {
                     'driver': 'ODBC Driver 13 for SQL Server',
                     'MARS_Connection': 'True',
