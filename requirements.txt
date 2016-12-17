@@ -1,2 +1,8 @@
-Django==1.9.8
+Django==1.10.4
+django-filter==0.13.0
+django-pyodbc-azure==1.10.0.1
+djangorestframework==3.4.1
+djangorestframework-jsonp==1.0.2
+Markdown==2.6.6
 Pillow==3.0.0
+pyodbc==3.1.1
