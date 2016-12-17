@@ -84,12 +84,36 @@ WSGI_APPLICATION = 'djangocupcakeshop.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+if DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'sql_server.pyodbc',
+            'NAME': 'db_name',
+            'USER': 'user',
+            'PASSWORD': '*****',
+            'HOST': 'your_server_name.database.windows.net',
+            'PORT': '1433',
+            'OPTIONS': {
+                'driver': 'FreeTDS',
+                'host_is_server': True,
+            },
+        }
     }
-}
+else :
+    DATABASES = {
+        'default': {
+            'ENGINE': 'sql_server.pyodbc',
+            'NAME': 'os.getenv("DATABASE_NAME")',
+            'USER': 'os.getenv("DATABASE_USER")',
+            'PASSWORD': 'os.getenv("DATABASE_PASSWORD")',
+            'HOST': 'os.getenv("DATABASE_HOST")',
+            'PORT': 'os.getenv("DATABASE_PORT")',
+            'OPTIONS' : {
+                    'driver': 'ODBC Driver 13 for SQL Server',
+                    'MARS_Connection': 'True',
+                }
+        }
+    }
 
 
 # Internationalization
