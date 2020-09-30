@@ -1,4 +1,4 @@
-# Make DjangoCupcakeshop Website 장고컵케이크가게 웹사이트 만들기
+# Make DjangoCupcakeshop Amazing Website 장고컵케이크가게 웹사이트 만들기
 [![Build Status](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop.svg?branch=master)](https://travis-ci.org/DjangoGirlsSeoul/djangocupcakeshop)
 [![Coverage Status](https://coveralls.io/repos/github/DjangoGirlsSeoul/djangocupcakeshop/badge.svg?branch=master)](https://coveralls.io/github/DjangoGirlsSeoul/djangocupcakeshop?branch=master)
 
